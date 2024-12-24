@@ -1,0 +1,9 @@
+fastapi
+SQLAlchemy
+PyJWT
+mariadb
+python-multipart
+uvicorn
+pydantic
+minio
+orjson
