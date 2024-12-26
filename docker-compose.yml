@@ -3,8 +3,7 @@ services:
   backend_1:
     image: backend_python:latest
     container_name: cluster_backend_1
-    ports:
-      - 8000:8000
+
     networks:
       cluster_net:
         ipv4_address: 20.1.0.5
@@ -12,16 +11,14 @@ services:
   backend_2:
     image: backend_python:latest
     container_name: cluster_backend_2
-    ports:
-      - 8000:8000
+
     networks:
       cluster_net:
         ipv4_address: 20.1.0.7
   backend_3:
     image: backend_python:latest
     container_name: cluster_backend_3
-    ports:
-      - 8000:8000
+
     networks:
       cluster_net:
         ipv4_address: 20.1.0.9
@@ -29,8 +26,7 @@ services:
   backend_4:
     image: backend_python:latest
     container_name: cluster_backend_4
-    ports:
-      - 8000:8000
+
     networks:
       cluster_net:
         ipv4_address: 20.1.0.11
